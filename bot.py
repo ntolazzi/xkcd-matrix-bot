@@ -24,7 +24,6 @@ def handle_message(room, event):
 
     :param room: Matrix room where message event occurred
     :param event: Matrix event of the message
-    :return:
     """
     # Make sure we didn't send this message ourselves
     print(event)
