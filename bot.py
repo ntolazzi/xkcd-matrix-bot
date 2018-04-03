@@ -55,7 +55,7 @@ def handle_invite(room_id, state):
 if __name__ == '__main__':
     client = MatrixClient(SERVER)
     client.login_with_password(USERNAME, PASSWORD)
-    print('Login as %s succesful' %USERNAME)
+    print('Login as %s successful' %USERNAME)
     client.add_invite_listener(handle_invite)
     for _, room in client.get_rooms().items():
         room.add_listener(handle_message)
